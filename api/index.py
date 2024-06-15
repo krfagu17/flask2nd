@@ -8,7 +8,7 @@ def hello():
     return 'Hello, World!'
 
 @app.route('/home')
-def hello():
+def home():
     return 'Welcome to home!'
 def lambda_handler(event, context):
     return handle_request(app, event, context)
